@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | الطبيعي</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo-icon.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-icon.png" alt="Altabeai Logo Icon">
+                <span class="lang-ar">الطبيعي</span>
+                <span class="lang-en hidden">Altabeai</span>
+            </a>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        <span class="lang-ar">الرئيسية</span>
+                        <span class="lang-en hidden">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html">
+                        <span class="lang-ar">المنتجات</span>
+                        <span class="lang-en hidden">Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <span class="lang-ar">من نحن</span>
+                        <span class="lang-en hidden">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="active">
+                        <span class="lang-ar">تواصل معنا</span>
+                        <span class="lang-en hidden">Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <button id="lang-switch" class="lang-switch">English</button>
+                </li>
+                <li>
+                    <a href="products.html" class="btn btn-primary">
+                        <span class="lang-ar">اطلب الآن</span>
+                        <span class="lang-en hidden">Order Now</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-header" style="text-align: center; padding-bottom: 0;">
+        <h1 style="color: var(--brown); font-size: 2.5rem;">
+            <span class="lang-ar">تواصل معنا</span>
+            <span class="lang-en hidden">Contact Us</span>
+        </h1>
+    </section>
+
+    <!-- Contact Container -->
+    <section>
+        <div class="contact-container">
+            <!-- Form -->
+            <div class="contact-form">
+                <h3 style="color: var(--brown); margin-bottom: 1.5rem;">
+                    <span class="lang-ar">أرسل لنا رسالة</span>
+                    <span class="lang-en hidden">Send us a message</span>
+                </h3>
+                <form id="contactForm"
+                    onsubmit="event.preventDefault(); alert('Message feature coming soon! Please use WhatsApp.');">
+                    <div class="form-group">
+                        <label>
+                            <span class="lang-ar">الاسم</span>
+                            <span class="lang-en hidden">Name</span>
+                        </label>
+                        <input type="text" required data-placeholder-ar="أدخل اسمك"
+                            data-placeholder-en="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <span class="lang-ar">الهاتف</span>
+                            <span class="lang-en hidden">Phone</span>
+                        </label>
+                        <input type="tel" required data-placeholder-ar="رقم هاتفك"
+                            data-placeholder-en="Your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <span class="lang-ar">الرسالة</span>
+                            <span class="lang-en hidden">Message</span>
+                        </label>
+                        <textarea rows="5" required data-placeholder-ar="رسالتك..."
+                            data-placeholder-en="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <span class="lang-ar">إرسال</span>
+                        <span class="lang-en hidden">Send</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Info -->
+            <div class="contact-info-cards">
+                <div class="info-card">
+                    <div class="info-icon">📞</div>
+                    <div>
+                        <h4>
+                            <span class="lang-ar">هاتف / واتساب</span>
+                            <span class="lang-en hidden">Phone / WhatsApp</span>
+                        </h4>
+                        <p style="color: var(--dark-text); font-weight: bold;">01092862363</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <h4>
+                            <span class="lang-ar">الموقع</span>
+                            <span class="lang-en hidden">Location</span>
+                        </h4>
+                        <p style="color: var(--dark-text);">
+                            <span class="lang-ar">التجمع الخامس، القاهرة الجديدة</span>
+                            <span class="lang-en hidden">New Cairo (Tagamoa), Egypt</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cta-banner"
+                    style="background-color: var(--primary-yellow); padding: 1.5rem; border-radius: 15px; margin-top: 1rem; text-align: center;">
+                    <h3 style="color: var(--brown); margin-bottom: 0.5rem;">
+                        <span class="lang-ar">جاهز للطلب؟</span>
+                        <span class="lang-en hidden">Ready to order?</span>
+                    </h3>
+                    <p style="margin-bottom: 1rem;">
+                        <span class="lang-ar">تواصل معنا الآن عبر واتساب لسرعة الرد</span>
+                        <span class="lang-en hidden">Contact us now via WhatsApp for fast response</span>
+                    </p>
+                    <a href="https://wa.me/201092862363" class="btn btn-secondary">
+                        <span class="lang-ar">محادثة واتساب</span>
+                        <span class="lang-en hidden">WhatsApp Chat</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo" style="color: var(--primary-yellow); margin-bottom: 1rem;">
+                    <img src="assets/logo-icon.png" alt="Logo" style="height: 40px;">
+                    <span class="lang-ar">الطبيعي</span>
+                    <span class="lang-en hidden">Altabeai</span>
+                </div>
+                <p>
+                    <span class="lang-ar">نقدم لكم أنقى أنواع العسل الطبيعي، مباشرة من المناحل إليكم.</span>
+                    <span class="lang-en hidden">Providing specific natural honey types, directly from hives to
+                        you.</span>
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    <span class="lang-ar">روابط سريعة</span>
+                    <span class="lang-en hidden">Quick Links</span>
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><span class="lang-ar">الرئيسية</span><span
+                                class="lang-en hidden">Home</span></a></li>
+                    <li><a href="products.html"><span class="lang-ar">المنتجات</span><span
+                                class="lang-en hidden">Products</span></a></li>
+                    <li><a href="about.html"><span class="lang-ar">من نحن</span><span
+                                class="lang-en hidden">About</span></a></li>
+                    <li><a href="contact.html"><span class="lang-ar">تواصل معنا</span><span
+                                class="lang-en hidden">Contact</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    <span class="lang-ar">تواصل معنا</span>
+                    <span class="lang-en hidden">Contact Us</span>
+                </h4>
+                <p>01092862363</p>
+                <p>New Cairo, Egypt</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> <span class="lang-ar">الطبيعي. جميع الحقوق محفوظة.</span><span
+                    class="lang-en hidden">Altabeai Honey. All reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

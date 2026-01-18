@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنتجات | الطبيعي</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo-icon.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-icon.png" alt="Altabeai Logo Icon">
+                <span class="lang-ar">الطبيعي</span>
+                <span class="lang-en hidden">Altabeai</span>
+            </a>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        <span class="lang-ar">الرئيسية</span>
+                        <span class="lang-en hidden">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html" class="active">
+                        <span class="lang-ar">المنتجات</span>
+                        <span class="lang-en hidden">Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <span class="lang-ar">من نحن</span>
+                        <span class="lang-en hidden">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <span class="lang-ar">تواصل معنا</span>
+                        <span class="lang-en hidden">Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <button id="lang-switch" class="lang-switch">English</button>
+                </li>
+                <li>
+                    <a href="products.html" class="btn btn-primary">
+                        <span class="lang-ar">اطلب الآن</span>
+                        <span class="lang-en hidden">Order Now</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-header" style="text-align: center; padding-bottom: 0;">
+        <h1 style="color: var(--brown); font-size: 2.5rem;">
+            <span class="lang-ar">منتجاتنا</span>
+            <span class="lang-en hidden">Our Products</span>
+        </h1>
+        <p style="color: var(--green-accent); max-width: 600px; margin: 1rem auto;">
+            <span class="lang-ar">اكتشف مجموعتنا المختارة من العسل الطبيعي الأصلي</span>
+            <span class="lang-en hidden">Discover our selection of authentic natural honey</span>
+        </p>
+    </section>
+
+    <!-- Products Grid -->
+    <section>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/product-clover.jpg" alt="Clover Honey">
+                </div>
+                <div class="product-info">
+                    <h3>
+                        <span class="lang-ar">عسل زهرة البرسيم</span>
+                        <span class="lang-en hidden">Clover Flower Honey</span>
+                    </h3>
+                    <p class="product-desc">
+                        <span class="lang-ar">عسل طبيعي مستخرج من رحيق أزهار البرسيم، يتميز بطعمه الخفيف وقيمته الغذائية
+                            العالية.</span>
+                        <span class="lang-en hidden">Natural honey extracted from clover flowers, known for its light
+                            taste and high nutritional value.</span>
+                    </p>
+                    <div class="product-options">
+                        <span class="weight-tag">250g</span>
+                        <span class="weight-tag">500g</span>
+                        <span class="weight-tag">1kg</span>
+                    </div>
+                    <button class="btn btn-whatsapp" onclick="orderProduct('عسل زهرة البرسيم', 'Clover Flower Honey')">
+                        <span class="lang-ar">اطلب الآن</span>
+                        <span class="lang-en hidden">Order Now</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/product-mountain.jpg" alt="Mountain Honey">
+                </div>
+                <div class="product-info">
+                    <h3>
+                        <span class="lang-ar">عسل جبلي</span>
+                        <span class="lang-en hidden">Mountain Honey</span>
+                    </h3>
+                    <p class="product-desc">
+                        <span class="lang-ar">عسل جبلي فاخر داكن اللون، غني بمضادات الأكسدة والمعادن. يدعم المناعة
+                            والصحة العامة.</span>
+                        <span class="lang-en hidden">Premium dark mountain honey, rich in antioxidants and minerals.
+                            Supports immunity and general health.</span>
+                    </p>
+                    <div class="product-options">
+                        <span class="weight-tag">250g</span>
+                        <span class="weight-tag">500g</span>
+                        <span class="weight-tag">1kg</span>
+                    </div>
+                    <button class="btn btn-whatsapp" onclick="orderProduct('عسل جبلي', 'Mountain Honey')">
+                        <span class="lang-ar">اطلب الآن</span>
+                        <span class="lang-en hidden">Order Now</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo" style="color: var(--primary-yellow); margin-bottom: 1rem;">
+                    <img src="assets/logo-icon.png" alt="Logo" style="height: 40px;">
+                    <span class="lang-ar">الطبيعي</span>
+                    <span class="lang-en hidden">Altabeai</span>
+                </div>
+                <p>
+                    <span class="lang-ar">نقدم لكم أنقى أنواع العسل الطبيعي، مباشرة من المناحل إليكم.</span>
+                    <span class="lang-en hidden">Providing specific natural honey types, directly from hives to
+                        you.</span>
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    <span class="lang-ar">روابط سريعة</span>
+                    <span class="lang-en hidden">Quick Links</span>
+                </h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><span class="lang-ar">الرئيسية</span><span
+                                class="lang-en hidden">Home</span></a></li>
+                    <li><a href="products.html"><span class="lang-ar">المنتجات</span><span
+                                class="lang-en hidden">Products</span></a></li>
+                    <li><a href="about.html"><span class="lang-ar">من نحن</span><span
+                                class="lang-en hidden">About</span></a></li>
+                    <li><a href="contact.html"><span class="lang-ar">تواصل معنا</span><span
+                                class="lang-en hidden">Contact</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    <span class="lang-ar">تواصل معنا</span>
+                    <span class="lang-en hidden">Contact Us</span>
+                </h4>
+                <p>01092862363</p>
+                <p>New Cairo, Egypt</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> <span class="lang-ar">الطبيعي. جميع الحقوق محفوظة.</span><span
+                    class="lang-en hidden">Altabeai Honey. All reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
